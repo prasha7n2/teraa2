@@ -25,3 +25,7 @@ varible "min_size" {
 varible "max_size" {
   default = "4"
 }
+varible "avaliblity_zone" {
+        type = list
+        default = ["us-west-2a", "us-west-2b"]
+}
