@@ -11,7 +11,7 @@ varible "subnet_id" {
   default = "subnet-0d4a269bf1aa7051c"
 }
 varible "load_balancers" {
-  default = "lb_name"
+  default = "mytest"
 }
 varible "instance_type" {
   default = "t2.micro"
@@ -27,5 +27,5 @@ varible "max_size" {
 }
 varible "avaliblity_zone" {
         type = map
-        default = ["us-east-1a", "us-east-1c"]
+        default = ["us-west-2a", "us-west-2b"]
 }
