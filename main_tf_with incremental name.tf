@@ -20,9 +20,9 @@ resource "aws_autoscaling_group" "nv-dev-watermark-asg" {
         availability_zones = ["${var.avaliblity_zone}"]
         launch_configuration = "${aws_launch_configuration.my1-launch-configuration.id}"
         vpc_zone_identifier = ["${var.subnet_id}"]
-        desired_capacity   = "${var.desired_count}"
-        min_size = "${var.min_size}"
-        max_size = "${var.max_size}"
+        desired_capacity   = 2
+        min_size = 2
+        max_size = 4
         health_check_type = "ELB"
         load_balancers = ["${var.load_balancers}"]
         lifecycle {
