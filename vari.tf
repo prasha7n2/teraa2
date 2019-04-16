@@ -17,15 +17,12 @@ varible "instance_type" {
   default = "t2.micro"
 }
 varible "desired_count" {
-   type    = integer
   default = 1
 }
 varible "min_size" {
-   type    = integer
   default = 1
 }
 varible "max_size" {
-   type    = integer
   default = 4
 }
 varible "avaliblity_zone" {
