@@ -1,3 +1,8 @@
 #!/bin/bash
-sudo apt get update
-sudo apt get install unzip
+sudo apt update
+sudo apt install apache2
+sudo ufw app list
+sudo ufw allow 'Apache'
+sudo ufw status
+sudo systemctl status apache2
+echo "my web page" > /var/www/html/index.html
