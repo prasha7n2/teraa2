@@ -30,5 +30,5 @@ variable "avaliblity_zone" {
         default = ["us-west-2a","us-west-2b"]
 }
 variable "iam_role" {
-        default = ["watermark-service-role"]
+        default = ["admin_access"]
 }
