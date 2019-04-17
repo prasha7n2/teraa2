@@ -12,6 +12,7 @@ resource "aws_launch_configuration" "nv-dev-watermark-launch-config-07Feb2019" {
         security_groups = ["${var.security_groups}"]
         key_name = "My_linux_new"
         iam_instance_profile = "${var.iam_role}"
+        ebs_optimized = "false"
         associate_public_ip_address = "true"
         user_data = "${file("user-data.sh")}"
 }
