@@ -17,19 +17,19 @@ varible "instance_type" {
   default = "t2.micro"
 }
 varible "desired_count" {
-  type = number
+  type = "number"
   default = "1"
 }
 varible "min_size" {
-  type = number
+  type = "number"
   default = "1"
 }
 varible "max_size" {
-  type = number
+  type = "number"
   default = "4"
 }
 varible "avaliblity_zone" {
-        type = list
+        type = "list"
         default = ["us-west-2a","us-west-2b"]
 }
 
