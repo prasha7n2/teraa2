@@ -29,6 +29,14 @@ resource "aws_autoscaling_group" "nv-dev-watermark-asg" {
         max_size = "${var.max_size}"
         health_check_type = "ELB"
         load_balancers = ["${var.load_balancers}"]
+        tag {
+                key = "Name"
+                value = "nv-dev-watermark"
+                propagate_at_launch = true
+                key = "Project"
+                value = "reveal-dev"
+                propagate_at_launch = true
+         }
         lifecycle {
                 create_before_destroy = true
 
