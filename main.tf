@@ -11,7 +11,7 @@ resource "aws_launch_configuration" "nv-dev-watermark-launch-config-07Feb2019" {
         instance_type = "${var.instance_type}"
         security_groups = ["${var.security_groups}"]
         key_name = "My_linux_new"
-        aws_eip = "true"
+        associate_public_ip_address = "true"
         user_data = "${file("user-data.sh")}"
 }
 
