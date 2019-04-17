@@ -1,34 +1,34 @@
-varible "region" {
+variable "region" {
   default = "us-west-2"
 }
-varible "security_groups" {
+variable "security_groups" {
   default = "sg-0ae26b0d844a1f4b3"
 }
-varible "Ami_ID" {
+variable "Ami_ID" {
   default = "ami-005bdb005fb00e791"
 }
-varible "subnet_id" {
+variable "subnet_id" {
   default = "subnet-0d4a269bf1aa7051c"
 }
-varible "load_balancers" {
+variable "load_balancers" {
   default = "mytest"
 }
-varible "instance_type" {
+variable "instance_type" {
   default = "t2.micro"
 }
-varible "desired_count" {
+variable "desired_count" {
   type = "number"
   default = "1"
 }
-varible "min_size" {
+variable "min_size" {
   type = "number"
   default = "1"
 }
-varible "max_size" {
+variable "max_size" {
   type = "number"
   default = "4"
 }
-varible "avaliblity_zone" {
+variable "avaliblity_zone" {
         type = "list"
         default = ["us-west-2a","us-west-2b"]
 }
